@@ -2,7 +2,9 @@
 function abriBancoDeDados()
 {
     try {
+
         $conexao = new mysqli('localhost', 'root', '', 'crud');
+        mysqli_set_charset($conexao, 'utf8');
         return $conexao;
     } catch (Exception $e) {
         echo $e->getMessage();
