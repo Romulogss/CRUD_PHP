@@ -19,12 +19,12 @@ mostrarTodos();
 </head>
 
 <body>
-<div class="modal fade" id="modal-excluir" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="modal-excluir" tabindex="-1" role="dialog" aria-labelledby="confirmar-excluir"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Excluir Pessoa</h5>
+                <h5 class="modal-title" id="confirmar-excluir">Excluir Pessoa</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -33,7 +33,7 @@ mostrarTodos();
                 Deseja realmente excluir essa pessoa?
             </div>
             <div class="modal-footer">
-                <? if (isset($_GET['id'])) : ?>
+                <?php if (isset($_GET['id'])) : ?>
                     <form action="<?php excluir(); ?>" method="get">
                         <button type="submit" class="btn btn-secondary" data-dismiss="modal">Não</button>
                         <a class="btn btn-danger" id="confirm" href="#">Sim</a>
