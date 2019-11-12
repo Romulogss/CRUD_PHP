@@ -35,13 +35,13 @@ editar();
                     <div class="form-group">
                         <label for="escolaridade">Escolaridade</label>
                         <select required name="escolaridade" id="escolaridade" class="form-control">
-                            <option value="fundamental" <?= $pessoa['escolaridade'] === 'Fundamental' ? "selected" : "" ?>>
+                            <option value="Fundamental" <?= $pessoa['escolaridade'] === 'Fundamental' ? "selected" : "" ?>>
                                 Fundamental
                             </option>
-                            <option value="medio" <?= $pessoa['escolaridade'] === 'Médio' ? "selected" : "" ?>>
+                            <option value="Médio" <?= $pessoa['escolaridade'] === 'Médio' ? "selected" : "" ?>>
                                 Médio
                             </option>
-                            <option value="superior" <?= $pessoa['escolaridade'] === 'Superior' ? "selected" : "" ?>>
+                            <option value="Superior" <?= $pessoa['escolaridade'] === 'Superior' ? "selected" : "" ?>>
                                 Superior
                             </option>
                         </select>
